@@ -1,0 +1,70 @@
+.vh-open {
+  height: 100vh;
+  width: 20vh;
+  z-index: 3;
+  color: white;
+  position: fixed;
+  background-color:black;
+  opacity: .8;
+  margin: 0%;
+}
+
+.vh-close {
+  height: 100vh;
+  z-index: 0;
+  position: fixed;
+  width: 5vw;
+  margin: 0%;
+}
+
+.side-nav{
+  vertical-align: top;
+}
+
+li{
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #318EA0;
+  border-radius: 5px;
+  padding-top: 10px;
+height: 100px;
+width: 100px;
+
+}
+
+li:hover{
+color: aqua;
+font-size: large;
+font-weight: bold;
+animation: spinAround 1s linear infinite;
+}
+
+
+
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+
+
+ul{
+  list-style-type: none;
+}
+
+.hov:hover{
+  color: black;
+}
+
+/*logo design*/
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  background-color:black;
+  opacity: 0.9;
+}

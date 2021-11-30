@@ -1,0 +1,70 @@
+<div class="side-nav">
+  <ng-sidebar-container [class.vh-close]="!opened" [class.vh-open]="opened">
+
+
+
+    <!-- sidebar -->
+    <ng-sidebar [opened]="opened">
+      <button (click)="toggleSidebar()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons-outlined">
+            close
+          </span></mat-icon>
+      </button>
+      <ul class="menu">
+
+        <li><a class="dropdown-item "  routerLink="/user">
+          <mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons-outlined">
+              space_dashboard
+            </span></mat-icon>
+          <span><br>DASHBOARD</span>
+          </a>
+        </li>
+
+        <li><a class="dropdown-item "  routerLink="/student/assignment">
+          <mat-icon aria-hidden="false" aria-label="Example home icon hov"><span class="material-icons-outlined">
+             assignment
+            </span></mat-icon>
+          <span><br>ASSIGNMENT</span>
+        </a>
+        </li>
+
+        <li><a class="dropdown-item "  routerLink="/result">
+          <mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons-outlined">
+              add_task
+            </span></mat-icon>
+          <span> <br>RESULT</span>
+          </a>
+        </li>
+
+
+        <li><a class="dropdown-item "  routerLink="/payment">
+          <mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons-outlined">
+              paid
+            </span></mat-icon>
+          <span><br>PAY HERE</span>
+          </a>
+        </li>
+
+        <li><a class="dropdown-item "  routerLink="/feedback">
+          <mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons-outlined">
+              wechat
+            </span></mat-icon>
+          <span><br>FEEDBACK</span>
+        </a>       
+       </li>
+
+      </ul>
+
+    </ng-sidebar>
+
+    <div ng-sidebar-content>
+      <button *ngIf="!opened" (click)="toggleSidebar()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons-outlined">
+            menu_open
+          </span></mat-icon>
+      </button>
+
+    </div>
+  </ng-sidebar-container>
+
+</div>

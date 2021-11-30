@@ -1,0 +1,52 @@
+.logIn{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* #psd,#eml{
+ 
+} */
+
+.head{
+    
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg");
+         
+      
+}
+
+
+.card{
+    
+    padding: 50px;
+    width: 50%;
+    margin: 0px auto;
+    /* background:scroll; */
+    background-color:rgba(20, 128, 255, 0.3);
+    float:right;
+
+
+}
+
+.body{
+    padding: 50px;
+}
+
+.card:hover{
+    background-color:rgba(0, 77, 167, 0.5);
+}
+.h2{
+    text-align: center;
+}
+@media (max-width:700px) {
+    .card{
+        width: 100%;
+        padding: 5px;
+    }
+    .logIn{
+        margin-left: 20px;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/erp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

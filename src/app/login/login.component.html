@@ -1,0 +1,35 @@
+<div class="head">
+    <div class="body">
+        <div class="card">
+    
+    
+            <div class="logIn">
+                <h2 class="h2">STUDENT LOGIN</h2>
+                <form>
+                    <div class="mb-3 ">
+                        <label for="exampleInputEmail1" class="form-label">Registration Number</label>
+                        <input type="text" class="form-control" id="eml" aria-describedby="emailHelp" (input)="onInput($event)"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="psd"  (input)="onInput1($event)"/>
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button  type="submit" class="btn btn-primary" [disabled]="isDisabled"(click)="onSignin()">Submit</button>
+                    <h4>{{clickButton}} {{clickButtonOne}}</h4>
+       
+                </form>
+                <script>
+                </script>
+    
+            </div>
+    
+    
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>

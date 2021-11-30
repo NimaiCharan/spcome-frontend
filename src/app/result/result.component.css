@@ -1,0 +1,152 @@
+.make-style1{
+    margin: 0px auto;
+    width: 100%;
+    font-weight: bolder;
+    padding: auto;
+    
+ }  
+ .make-style{
+     padding-left: 15px;
+     padding-right: 50ch;
+     background-color:white;
+     color: white;
+     text-align: center;
+     vertical-align:center;
+     padding: 20px;
+     margin: 0px auto;
+     width: 50%;
+    height: 150px;
+ 
+  }
+  
+ 
+  
+  
+  .make-style2{
+     padding-left: 15px;
+     padding-right: 50ch;
+     background-color:#318EA0;
+     color: white;
+     text-align: center;
+     vertical-align:center;
+     padding: 20px;
+     margin: 0px auto;
+     width: 50%;
+     height: 150px;
+   }
+  
+   
+  
+  
+   .nimai{
+      background-color: black;
+   }
+  
+    .make-style,.make-style2{
+      display: inline-block;
+   } 
+  
+   .navbar{
+      color: white;
+   }
+  
+  .card{
+     margin: 10px;
+     border: 1px solid #318EA0;
+     
+     height: 370px;
+     
+     
+  }
+  
+  .card1, .card2
+  {
+     width: 400px;
+     height: 400px;
+     border: 2px solid grey;
+     margin-top: 50px;
+     margin-right: 50px;
+     border-radius: 20px;
+     box-shadow: 0 0 20px black;
+     
+  }
+  .card3{
+    width: 200px;
+     height: 400px;
+     border: 2px solid grey;
+     margin-top: 50px;
+     border-radius: 20px;
+     box-shadow: 0 0 20px black;
+  }
+  .card1,.card2,.card3
+  {
+     display: inline-block;
+  } 
+  
+  .card-div{
+     margin: 0px auto;
+     text-align: center;
+     padding: 20px;
+     
+  }
+  
+  #fac
+  {
+   border-radius:100%;
+  } 
+  
+  
+  .figure{
+     margin: 20px;
+  }
+  
+  
+  
+  .fig1,.fig2,.fig3,.fig4{
+     display: inline-block;  
+  }
+  
+  .fig{
+     text-align: center;
+  }
+  
+  
+  
+  .example-container {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: #eee;
+   }
+ 
+ 
+ 
+   .avtar{
+      height: 75px;
+      width: 75px;
+      border-radius:100% ;
+   }
+ 
+   .avtar1,.avtar2{
+      display: inline-block;
+      vertical-align: middle;
+   }
+ 
+   .avtar-full{
+      padding: auto;
+   }
+ 
+   .title{
+      background-color: #318EA0;
+      
+      height: 30px;
+      color: white;
+      vertical-align: middle;
+   }
+   
+ 
+   #navbarDropdown:hover{
+ color:aqua ;
+   }
