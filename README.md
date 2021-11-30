@@ -1,2 +1,2 @@
 # spcome-frontend
-Fronend using Angular for Spcome ERP
+Frontend using Angular for Spcome ERP
