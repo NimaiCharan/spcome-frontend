@@ -8,8 +8,8 @@ export class AppService {
   constructor(private http: HttpClient) {}
 
   rootUrl = 'https://6790-2401-4900-3e93-45ae-b5b8-8285-9a59-3218.ngrok.io/';
-  //url = 'http://localhost:3001/api/v1';
-  url = "http://20.120.118.194:3001/api/v1";
+  url = 'http://localhost:3001/api/v1';
+  //url = "http://20.120.118.194:3001/api/v1";
   
   options = {
     headers: new HttpHeaders().set(
