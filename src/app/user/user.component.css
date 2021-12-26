@@ -69,8 +69,13 @@
     margin-right: 50px;
     border-radius: 20px;
     box-shadow: 0 0 20px black;
-    
+    text-align: left;
+   
  }
+ .attendance{
+   overflow:scroll;
+ }
+   
  .card3{
    width: 200px;
     height: 400px;

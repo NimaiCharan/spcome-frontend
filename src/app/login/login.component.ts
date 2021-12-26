@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-login',
@@ -8,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  message:string=""
-  message1:string=""
+  reg_no:string=""
+  password:string=""
   clickButton:string=""
   clickButtonOne:string=""
   isDisabled:boolean = true
@@ -23,32 +24,34 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-onInput(event:any){
-    this.message = event.target.value
-    if(this.message=='' || this.message1==''){
+get_regNo(event:any){
+    this.reg_no = event.target.value;
+    
+    if(this.reg_no==''){
       this.isDisabled = true
     }else{
       this.isDisabled = false
     }
   
    }
-   onInput1(event:any){
-    this.message1 = event.target.value
-    if(this.message1==''|| this.message==''){
+   get_password(event:any){
+    this.password = event.target.value;
+    if(this.password==''){
       this.isDisabled = true
     }else{
       this.isDisabled = false
     }
-   }
+   } 
    onSignin(){
     
-      var len = this.message.length;
-      if(len < 3){
+      var len = this.reg_no.length;
+      if(len < 5){
         this.clickButtonOne = 'Error! enter a valid username'
       }
       else{
         this.clickButton = 'Signed in successfully'   
-        console.log(this.message);
+        console.log(this.reg_no);
+        console.log(this.password)
         this.router.navigateByUrl('/user'); 
       }
    }

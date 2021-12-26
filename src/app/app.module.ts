@@ -24,6 +24,8 @@ import { NavComponent } from './nav/nav.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ResultComponent } from './result/result.component';
+//import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -59,7 +61,8 @@ import { ResultComponent } from './result/result.component';
     ReactiveFormsModule,
     SidebarModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
     //FontAwesomeModule
   ],
   providers: [],

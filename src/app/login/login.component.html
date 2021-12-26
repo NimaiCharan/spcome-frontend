@@ -8,11 +8,11 @@
                 <form>
                     <div class="mb-3 ">
                         <label for="exampleInputEmail1" class="form-label">Registration Number</label>
-                        <input type="text" class="form-control" id="eml" aria-describedby="emailHelp" (input)="onInput($event)"/>
+                        <input type="text" class="form-control" id="eml" aria-describedby="emailHelp" (input)="get_regNo($event)"/>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="psd"  (input)="onInput1($event)"/>
+                        <input type="password" class="form-control" id="psd"  (input)="get_password($event)"/>
                     </div>
                     <div class="mb-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">

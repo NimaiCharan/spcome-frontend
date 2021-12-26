@@ -17,7 +17,14 @@
     
     <div class="card" title="Notice">
       <h5 class="title">Notice and Announcements</h5>
-      
+      <ng-container *ngFor="let notice of data">
+        <div class="card-body">
+          <h5 class="card-title">{{notice.notice_heading}}</h5>
+          <p class="card-text">{{notice.notice_text}}</p>
+          <hr>
+        </div>
+        
+      </ng-container>
       
     </div>
   </div>
@@ -29,6 +36,28 @@
   <div class='card2'>
     <div class="card">
       <h5 class="title">Courses and Attendance</h5>
+      <div class='attendance'>
+        <table>
+        <ng-container *ngFor="let atten of attendance">
+          <div class="card-body">
+            <h5 class="card-title">{{atten.subject_name}}</h5>
+            
+            
+            
+            
+              <tr>
+                <td><p class="card-text"><b>{{atten.subject_id}}</b></p></td>
+                <td><p class="card-text" style="width: 150px;">TOTAL: {{atten.total}}</p></td>
+                <td><p class="card-text" style="width: 150px;">PRESENT: {{atten.attendance}}</p></td>
+              </tr>
+           
+            <hr>
+          </div>
+        </ng-container>
+        </table>
+      </div>
+        
+     
     </div>
   </div>
 
@@ -43,7 +72,28 @@
   <div class='card3'>
     <div class="card">
       <h5 class="title">Fees </h5>
-      
+      <br>
+      <img src="https://cdn-icons-png.flaticon.com/512/438/438526.png" alt="fees" style="width: 70px; height: 70px; margin: 0px auto;">
+      <br>
+      <h5 class="card-title">
+        TOTAL FEES:<br>
+        <span style="color:blue">{{fees.total_fees}}</span>
+
+
+      </h5>
+      <h5 class="card-title">
+        FEES PAID: <br>
+        <span style="color:green">{{fees.paid}}</span>
+
+
+      </h5>
+      <h5 class="card-title">
+        OUTSTANDING:
+        <br>
+        <span style="color:red">{{fees.total_fees-fees.paid}}</span> 
+        
+
+      </h5>
     </div>
   </div>
 
